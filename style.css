@@ -1,0 +1,175 @@
+/* Ejemplo de estilos personalizados */
+body {
+  background-image: url("");
+  background-size: cover;
+}
+
+.section {
+padding: 100px 0;
+color: #fff;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.welcome {
+background-color: #343A40;
+width: 100%;
+border-radius: 10px;
+}
+
+/* acerca de mi */
+.card {
+background-color: #343A40;
+color: #fff;
+border: none;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 40px;
+align-items: center;
+justify-content: center;
+}
+
+.card-img-top {
+object-fit: cover;
+height: 300px;
+width: 300px;
+}
+
+.card-title {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.card-text {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+/* skills */
+.section-title {
+text-align: center;
+}
+
+.skills-list {
+background-color: #343A40;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.skill {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.progress-bar {
+width: 100%;
+background-color: #f0f0f0;
+height: 20px;
+border-radius: 10px;
+position: relative;
+}
+
+.progress {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background-color: #FFD700;
+border-radius: 10px;
+}
+
+.skill:hover .progress {
+  animation: progress-animation 0.5s ease-in-out forwards;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* proyectos/trabajo */
+.portfolio{
+  background-color: #343A40;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.gallery img {
+  width: 50%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFFFFF;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.slide-right {
+  animation: slideRight 0.5s;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
