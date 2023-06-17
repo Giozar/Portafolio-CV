@@ -3,7 +3,6 @@ let currentSlide = 0;
 const slides = document.querySelectorAll('.gallery img');
 
 export let changeSlide = (direction) => {
-    
     slides[currentSlide].classList.remove('slide-right');
     slides[currentSlide].classList.remove('slide-left');
 

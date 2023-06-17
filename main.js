@@ -1,5 +1,5 @@
 import './style.css'
-import { init } from './src/app'
+import { init, renderProject } from './src/app'
 
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -9,4 +9,12 @@ prev.addEventListener('click', ()=>{
 })
 next.addEventListener('click', ()=>{
     init('right');
+})
+
+
+const project = document.querySelector('.project');
+const op1 = document.querySelector('.op1');
+
+op1.addEventListener('click', ()=>{
+    renderProject(project);
 })

@@ -18,11 +18,19 @@ text-align: center;
 max-width: 800px;
 margin: 0 auto;
 }
-
+/* presentacion */
 .welcome {
 background-color: #343A40;
 width: 100%;
 border-radius: 10px;
+height: 600px;
+}
+
+.card-img-hobby{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 /* acerca de mi */
@@ -117,8 +125,10 @@ border-radius: 10px;
 }
 
 .gallery img {
-  width: 50%;
-  height: auto;
+  border-radius: 10px;
+  position: absolute;
+  width: 80%;
+  height: 80%;
   transition: transform 0.3s;
 }
 
@@ -150,18 +160,22 @@ border-radius: 10px;
 
 .slide-right {
   animation: slideRight 0.5s;
+  position: absolute;
+  z-index: 1;
 }
 
 .slide-left {
   animation: slideLeft 0.5s;
+  position: absolute;
+  z-index: 1;
 }
 
 @keyframes slideRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 
@@ -170,6 +184,6 @@ border-radius: 10px;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
