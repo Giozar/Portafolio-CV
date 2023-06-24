@@ -21,8 +21,6 @@ const evidencias = [
 ]
 
 export const project = (element, op) => {
-    const option = op;
-    console.log(option);
     const projectContent = document.createElement('div');
     projectContent.classList.add('project-content');
 
