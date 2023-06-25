@@ -1,5 +1,5 @@
 import './style.css'
-import { init, renderProject } from './src/app'
+import { init, renderProject, setForm } from './src/app'
 
 const project = document.querySelector('.project');
 const op1 = document.querySelector('.op1');
@@ -62,3 +62,6 @@ op3.addEventListener('click', ()=>{
         init('right', slides);
     })
 })
+
+// const form = document.querySelector('form');
+// setForm(form);
