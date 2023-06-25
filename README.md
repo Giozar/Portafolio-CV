@@ -19,3 +19,9 @@ Este es mi portafolio personal, un proyecto destacado que muestra mi experiencia
 Si tienes alguna pregunta o sugerencia sobre mi portafolio, no dudes en contactarme. Puedes encontrarme en [manuelgio.cortazar.delacruz@gmail.com](manuelgio.cortazar.delacruz@gmail.com).
 
 ¡Gracias por visitar mi portafolio!
+
+## IMPORTANTE
+
+- Para poder ejecutar o abrir este proyecto es necesario tener instalado node
+- Para instalar las dependencias de desarrollo es importante el siguinete comando el ruta del proyecto desde la terminal: npm install
+- Ejecutar npm run dev y abrir el proyecto desde el servidor local que te da en la terminal
